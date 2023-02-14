@@ -1,0 +1,43 @@
+$fontstack: 'Merriweather', serif;;
+$fontsize: 16px;
+$primary: lightblue;
+$primary_blue: blue;
+$primary_dark: darken;
+
+h1{
+    color: $primary_blue;
+}
+
+#container {
+    width: 800px;
+}
+
+#btns {
+    display: flex;
+
+    li {
+        float: left;
+        width: 20%;
+        background-color: $primary;
+        outline-style: solid;
+        padding: 1em;
+        list-style-type: none;
+    }
+
+    & li:hover {
+        mix-blend-mode: $primary_dark;
+        font-weight: bold;
+    }
+
+    @media only screen and (min-width: 650px) {
+        & {
+            display: inline;
+        }
+    }
+}
+
+#list {
+    font-family: $fontstack;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');

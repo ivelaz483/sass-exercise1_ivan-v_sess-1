@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+h1 {
+  color: blue;
+}
+
+#container {
+  width: 800px;
+}
+
+#btns {
+  display: flex;
+}
+#btns li {
+  float: left;
+  width: 20%;
+  background-color: lightblue;
+  outline-style: solid;
+  padding: 1em;
+  list-style-type: none;
+}
+#btns li:hover {
+  mix-blend-mode: darken;
+  font-weight: bold;
+}
+@media only screen and (min-width: 650px) {
+  #btns {
+    display: inline;
+  }
+}
+
+#list {
+  font-family: "Merriweather", serif;
+}
+
+/*# sourceMappingURL=style.css.map */
